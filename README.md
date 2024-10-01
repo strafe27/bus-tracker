@@ -40,7 +40,7 @@ Successful execution of tasks can be seen below:
 </p>
 
 ### Database Management
-The ingested data is stored in a **PostgreSQL** database, allowing for easy querying and data access.
+The ingested data is automatically stored in a **PostgreSQL** database, allowing for easy querying and data access.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/691cc01f-5a97-4d94-8d08-932116a74b30" alt="Database Structure">
