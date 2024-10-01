@@ -2,6 +2,13 @@
 
 The **Malaysian Bus Tracking System** is designed to monitor and track bus positions across Malaysia using the **GTFS Realtime API**. The system specifically tracks the real-time locations of buses operated by **Prasarana** and **MyBus** services.
 
+This includes core services such as
+- **Rapid KL**
+- **Rapid Penang**
+- **Rapid Pahang**
+- **Rapid MRT Feeders**
+- **Mybas Johor**
+  
 ## Key Features
 The ETL pipeline is capable of processing **up to 800 rows every 30 seconds**, which translates to **90,000 rows per hour** and over **2 million rows daily**.
 
