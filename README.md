@@ -10,7 +10,7 @@ This includes core services such as
 - **Mybas Johor**
   
 ## Key Features
-The ETL pipeline is capable of processing **up to 800 rows every 30 seconds**, which translates to **90,000 rows per hour** and over **2 million rows daily**.
+This ETL pipeline is capable of processing **up to 800 rows every 30 seconds**, which translates to **90,000 rows per hour** and over **2 million rows daily**.
 
 This system comprises the following components:
 - **API Ingestion**
