@@ -19,13 +19,13 @@ This system comprises the following components:
 - **Database Management**
 - **Visualization**
 
----
-
 ## Tools Used
 - **Apache Airflow**
 - **Docker**
 - **PostgreSQL**
 - **Seaborn**
+
+---
 
 ## ETL Workflow
 The diagram below shows the full ETL pipeline, outlining the data flow from ingestion to storage and visualization.
