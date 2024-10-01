@@ -1,7 +1,3 @@
-Here's the modified version of your README:
-
----
-
 # Malaysian Bus Tracking System
 
 The **Malaysian Bus Tracking System** is designed to track the position of buses in Malaysia using the GTFS Realtime API. The system tracks bus locations for both **Prasarana** and **MyBus** services.
@@ -53,6 +49,3 @@ The ingested data is stored in a **PostgreSQL** database, allowing for easy quer
 ### Visualization
 The data can be visualized to track the movement of buses in real-time, providing insights into bus routes and locations.
 
---- 
-
-This version improves clarity and provides a more structured explanation of each part of the system.
