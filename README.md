@@ -49,3 +49,20 @@ The ingested data is automatically stored in a **PostgreSQL** database, allowing
 ### Visualization
 The data can be visualized to track the movement of buses in real-time, providing insights into bus routes and locations.
 
+Graph below shows the average number of busses per agency in the morning
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a7ded64e-1bb5-4eb4-8b0c-93752e7b8f9f"
+</p>
+
+<p align="center">
+  <img src=""
+</p>
+
+<p align="center">
+  <img src=""
+</p>
+
+<p align="center">
+  <img src=""
+</p>
