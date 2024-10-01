@@ -55,14 +55,14 @@ Graph below shows the average number of busses per agency in the morning
   <img src="https://github.com/user-attachments/assets/a7ded64e-1bb5-4eb4-8b0c-93752e7b8f9f"
 </p>
 
+It seems that Mybus lead followed by Rapid Bus KL. However, by mapping the locations of each bus, the reason becomes apparent. 
+
 <p align="center">
-  <img src=""
+  <img src="https://github.com/user-attachments/assets/37baad0b-74e2-4536-a332-e351e71d09d5"
 </p>
 
 <p align="center">
-  <img src=""
+  <img src="https://github.com/user-attachments/assets/881b7615-a50b-4481-808a-833262b228bd"
 </p>
 
-<p align="center">
-  <img src=""
-</p>
+Through tracking all of the busses from Rapid KL and Mybus Johor, it is seen that Rapid KL only convers interstate trips while Mybus covers both interstate and out-of-state trips thus having more busses overall.
