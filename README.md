@@ -1,68 +1,73 @@
 # Malaysian Bus Tracking System
 
-The **Malaysian Bus Tracking System** is designed to track the position of buses in Malaysia using the GTFS Realtime API. The system tracks bus locations for both **Prasarana** and **MyBus** services.
+The **Malaysian Bus Tracking System** is designed to monitor and track bus positions across Malaysia using the **GTFS Realtime API**. The system specifically tracks the real-time locations of buses operated by **Prasarana** and **MyBus** services.
 
-The ETL pipeline is capable of handling up to **800 rows of data every 30 seconds**, which amounts to **90,000 rows of data every hour** and over **2,000,000 rows daily**.
+## Key Features
+The ETL pipeline is capable of processing **up to 800 rows every 30 seconds**, which translates to **90,000 rows per hour** and over **2 million rows daily**.
 
-The system is divided into several components:
+This system comprises the following components:
 - **API Ingestion**
 - **Containerization**
 - **ETL Scheduling**
 - **Database Management**
 - **Visualization**
 
+---
+
 ## ETL Workflow
+The diagram below shows the full ETL pipeline, outlining the data flow from ingestion to storage and visualization.
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dcb041d3-94f7-45c6-bbb4-20bac165a4ee" alt="ETL Workflow Diagram">
 </p>
 
 ### API Ingestion
-The data is collected from the Malaysian GTFS Realtime API, which provides real-time positions of buses from Prasarana and MyBus.
+The data is ingested from Malaysia's **GTFS Realtime API**, which provides up-to-date information on the positions of buses for both **Prasarana** and **MyBus**.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/246e87aa-d820-4736-8e09-1b3f85362fd9" alt="API Ingestion Diagram">
 </p>
 
 ### Containerization
-The entire system is built within Docker containers to ensure portability and seamless deployment on cloud infrastructure. This involves setting up Dockerfiles, docker-compose configurations, and managing dependencies through `requirements.txt`.
+The system is containerized using **Docker** to ensure portability and ease of deployment, whether it's on local environments or cloud platforms. This involves setting up **Dockerfiles**, **docker-compose**, and managing dependencies through `requirements.txt`.
 
 ### ETL Scheduling
-Using **Apache Airflow**, the system ingests data every 30 seconds and stores it in a **PostgreSQL** database.
+Using **Apache Airflow**, the ETL pipeline is scheduled to run every 30 seconds, ensuring that real-time bus data is continuously ingested and stored in the **PostgreSQL** database.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/73c2101e-c9ab-4c4e-b9ac-6cf712da992d" alt="ETL Scheduling Diagram">
 </p>
 
-Successful execution of tasks can be seen below:
+You can view the successful task executions below:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4a9bae80-9d77-404c-912d-e9c5ac4c855e" alt="Successful ETL Runs">
 </p>
 
 ### Database Management
-The ingested data is automatically stored in a **PostgreSQL** database, allowing for easy querying and data access.
+The ingested bus data is automatically stored in a **PostgreSQL** database. This allows users to easily query the data for analysis or further processing.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/691cc01f-5a97-4d94-8d08-932116a74b30" alt="Database Structure">
 </p>
 
 ### Visualization
-The data can be visualized to track the movement of buses in real-time, providing insights into bus routes and locations.
+The system provides real-time visualization of bus movements across Malaysia. This helps in monitoring bus routes, frequency, and overall operations.
 
-Graph below shows the average number of busses per agency in the morning
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/a7ded64e-1bb5-4eb4-8b0c-93752e7b8f9f"
-</p>
-
-It seems that Mybus lead followed by Rapid Bus KL. However, by mapping the locations of each bus, the reason becomes apparent. 
+The graph below shows the **average number of buses per agency** captured in the morning:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/37baad0b-74e2-4536-a332-e351e71d09d5"
+  <img src="https://github.com/user-attachments/assets/a7ded64e-1bb5-4eb4-8b0c-93752e7b8f9f" alt="Average Buses Per Agency">
+</p>
+
+It appears that **MyBus** leads, followed by **Rapid Bus KL**. However, mapping the locations of each bus helps explain this difference.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/37baad0b-74e2-4536-a332-e351e71d09d5" alt="Bus Map Visualization">
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/881b7615-a50b-4481-808a-833262b228bd"
+  <img src="https://github.com/user-attachments/assets/881b7615-a50b-4481-808a-833262b228bd" alt="Bus Location Map">
 </p>
 
-Through tracking all of the busses from Rapid KL and Mybus Johor, it is seen that Rapid KL only convers interstate trips while Mybus covers both interstate and out-of-state trips thus having more busses overall.
+Upon analyzing the mapped bus locations, it becomes clear that **Rapid KL** primarily covers **interstate trips**, whereas **MyBus** serves both **interstate** and **out-of-state routes**. This explains the higher number of buses in the MyBus fleet.
