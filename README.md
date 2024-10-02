@@ -67,10 +67,10 @@ The ingested bus data is automatically stored in a **PostgreSQL** database. This
 ### Visualization
 The system provides real-time visualization of bus movements across Malaysia. This helps in monitoring bus routes, frequency, and overall operations.
 
-The graph below shows the **average number of buses per agency** captured in the morning:
+The graph below shows the **number of buses per agency** captured in the morning:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a7ded64e-1bb5-4eb4-8b0c-93752e7b8f9f" alt="Average Buses Per Agency">
+  <img src="https://github.com/user-attachments/assets/a7dde6a0-eddc-45a0-b32b-89d63fd88c26" alt="Average Buses Per Agency">
 </p>
 
 It appears that **MyBus** leads, followed by **Rapid Bus KL**. However, mapping the locations of each bus helps explain this difference.
