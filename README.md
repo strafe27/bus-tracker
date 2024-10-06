@@ -1,6 +1,6 @@
 # Malaysian Bus Tracking System
 
-The **Malaysian Bus Tracking System** is designed to monitor and track bus positions across Malaysia using the **GTFS Realtime API**. The system specifically tracks the real-time locations of buses operated by **Prasarana** and **MyBus** services.
+The **Malaysian Bus Tracking System** is designed to monitor and track bus positions across Malaysia using the **GTFS Realtime API**. The system specifically tracks the near real-time locations of buses operated by **Prasarana** and **MyBus** services.
 
 This includes core services such as
 - **Rapid KL**
